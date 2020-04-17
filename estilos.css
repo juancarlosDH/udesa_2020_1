@@ -1,0 +1,19 @@
+body{
+    background-color: gray;
+}
+
+div{
+    margin: 10px;
+}
+
+p{
+    color: crimson;
+}
+
+h5{
+    color: brown;
+}
+
+span{
+    font-size: 18px;
+}
