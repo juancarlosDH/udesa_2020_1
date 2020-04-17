@@ -1,5 +1,5 @@
 body{
-    background-color: gray;
+    background-color: rgb(240, 238, 238);
 }
 
 div{
@@ -12,8 +12,26 @@ p{
 
 h5{
     color: brown;
+    margin: 5px 0;
 }
 
 span{
-    font-size: 18px;
+    font-size: 12px;
+}
+
+code{
+    color: #FFF;
+    background-color: #000;
+    padding: 10px;
+    display: block;
+    margin: 5px 0;
+}
+
+
+code::before {
+    content: " $ ";
+    color: rgb(30, 253, 0);
+}
+img {
+    width: 500px;
 }

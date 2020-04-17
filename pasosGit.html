@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Pasos Git</title>
 </head>
 <body>
 
     <div class="container">
+        <h1>Gui rapida para el uso de Git</h1>
 
         <div>
             <h3>Cuando inicio un proyecto</h3>
             <ol>
-                <li>Inicializo con el comando: git init</li>
+                <li>Inicializo con el comando:
+                    <code>git init</code>
+                </li>
                 <li>Configurar el usuario: nombre e email
                     <code>git config user.email 'mi email'</code>
                     <code>git config user.name 'mi nombre'</code>
@@ -21,43 +25,72 @@
                 <li>Configuro el repo remoto:
                     <code>git remote add origin https://github.com/usuario/repo.git</code>
                 </li>
-                <li>Subo los cambios de este proyecto, que es todos los archivos actuales
-                    <h5>Agrego los archivos al paquete (commit)</h5>
-                    <code>git add .</code>
-                    <h5>Cierro el paquete (commit)</h5>
-                    <code>git commit -m 'mensaje del commit'</code>
-                    <h5>Subo el paquete (commit)</h5>
-                    <code>git push origin master</code>
-                    <span>Aqui les puedo pedir el usuario y clave de github</span>
-                    <p>Ahora podemos abrir github y vemos los cambios</p>
+                <li>Subo todos los archivos de este proyecto:
+                    <ol>
+                        <li><h5>Agrego los archivos al paquete (commit)</h5>
+                            <code>git add .</code></li>
+                        <li><h5>Cierro el paquete (commit)</h5>
+                            <code>git commit -m 'mensaje del commit'</code></li>
+                        <li><h5>Subo el paquete (commit)</h5>
+                            <code>git push origin master</code>
+                            <span>Aqui les puedo pedir el usuario y clave de github</span></li>
+                    </ol>
                 </li>
+                <li>Ahora podemos abrir github y vemos los cambios</li>
             </ol>
         </div>
+        <hr>
     
         <div>
-            <h3>Cuando me bajo un proyecto</h3>
+            <h3>Para Bajarme un proyecto</h3>
             <ol>
-                <li>Inicializo con el comando: git init</li>
-                <li>Configurar el usuario: nombre e email
+                <li>Clono con el comando:
+                    <code>git clone https://github.com/usuario/repo.git</code>
+                </li>
+                <li>Configurar el usuario: nombre e email, por las dudas
                     <code>git config user.email 'mi email'</code>
                     <code>git config user.name 'mi nombre'</code>
                 </li>
-                <li>Configuro el repo remoto:
-                    <code>git remote add origin https://github.com/usuario/repo.git</code>
-                </li>
-                <li>Subo los cambios de este proyecto, que es todos los archivos actuales
-                    <h5>Agrego los archivos al paquete (commit)</h5>
-                    <code>git add .</code>
-                    <h5>Cierro el paquete (commit)</h5>
-                    <code>git commit -m 'mensaje del commit'</code>
-                    <h5>Subo el paquete (commit)</h5>
-                    <code>git push origin master</code>
-                    <span>Aqui les puedo pedir el usuario y clave de github</span>
-                    <p>Ahora podemos abrir github y vemos los cambios</p>
-                </li>
+                
+                <p>Ahora pueden modificar archivo y suben los cambios</p>
             </ol>
         </div>
+        <hr>
 
+        <div>
+            <h3>Cuando hago cambios</h3>
+            <ol>
+                <li>Veo que archivos cambié
+                    <code>git status</code>
+                </li>
+                <li>Subo los cambios que hice, que es todos los archivos actuales
+                    <ol>
+                        <li><h5>Agrego los archivos al paquete (commit)</h5>
+                            <code>git add .</code></li>
+                        <li><h5>Cierro el paquete (commit)</h5>
+                            <code>git commit -m 'mensaje del commit'</code></li>
+                        <li><h5>Subo el paquete (commit)</h5>
+                            <code>git push origin master</code>
+                            <span>Aqui les puedo pedir el usuario y clave de github</span></li>
+                    </ol>
+                    
+                    <div><h4>Si aparce este error:</h4>
+                        <img src="errorGitAlHacerPush.png" alt="">
+                        <h5>Tenemos que ejecutar antes:</h5>
+                        <code>git pull origin master</code>
+                    </div>
+                    
+                </li>
+           </ol>
+        </div>
+        <hr>
+        <div>
+            <h4>Si el algun momento aparece esta pantalla:</h4>
+            <img src="pantallaGit.png" alt="">
+            <h5>Para salir de la pantalla escribimos</h5>
+            <code>:q</code>
+            <div>Luego le damos enter y deberia de continuar</div>
+        </div>
     </div>
     
 </body>
