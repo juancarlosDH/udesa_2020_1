@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/bg-2.png);
+    font-family: Helvetica, Tahoma;
+    font-size: 16px;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+header{
+    background-color: #EB453D;
+    padding: 2px;
+    position: fixed;
+    top: 2px;
+    z-index: 10;
+    width: 1000px;
+}
+
+header ul{
+    list-style-type: none;
+    display: flex;
+}
+
+header ul li a{
+    display: inline-block;
+    padding: 15px;
+    font-size:1.6em;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: 2.2fr 0.8fr;
+    gap: 20px;
+    margin-top: 70px;
+}
+
+#products{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: #FFF;
+    padding: 10px;
+}
+
+.product{
+    position: relative;
+}
+
+.product img{
+    width: 100%;
+}
+
+img.banderin{
+    position: absolute;
+    width: 20%;
+    right: 0;
+}
+
+.product p{
+    text-align: justify;
+    line-height: 1.3em;
+}
+
+div.show-more{
+    text-align: center;
+}
+
+div.show-more a{
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #EB453D;
+}
+
+#aside{
+    gap: 30px;
+}
+
+#tutos h3{
+    background-color: #fff;
+    padding: 5px;
+    font-size: 30px;
+    margin: 0;
+}
+
+.chat{
+    background-color: cadetblue;
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+}
+
+.centrado{
+    text-align: center;
+}
+
+.tutorials-container, .ads-container {
+    margin: 20px 0;
+	background: #fff;
+	border: 1px solid lightblue;
+}
+.tutorial {
+	overflow: hidden;
+	padding: 10px;
+	border-bottom: 1px solid lightblue
+}
+.tutorial img {
+	float: left;
+	margin-right: 10px;
+}
+.ads {
+	text-align: center;
+	padding: 10px;
+}
+
+/*cambio cosas para tablets*/
+@media (max-width:768px) {
+
+    header img{
+        height: 2em;
+    }
+
+    body {
+        font-size: 1.3em;
+    }
+
+    #main{
+        grid-template-columns: 1fr;
+        margin-top: 10px;
+    }
+
+    .centrado{
+        text-align: left;
+    }
+
+    header{
+        position: relative;
+    }
+
+    header ul li a{
+        font-size: 1.2em;
+    }
+
+}
+
+/*cambio ahora para mobile*/
+@media (max-width:420px) {
+    header ul {
+        display: initial;
+    }
+    body {
+        font-size: 2.3em;
+    }
+
+    #products{
+        grid-template-columns: 1fr;
+    }
+
+    .product p{
+        font-size: 1em;
+    }
+
+}

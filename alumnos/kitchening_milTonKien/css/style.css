@@ -1,0 +1,149 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: url(../images/bg-body.png);
+}
+
+.logo{
+    border-radius: 50%;
+    
+}
+.main-header{
+    text-align: center;
+}
+
+.main-nav li{ 
+    background-color: rgba(0, 0, 0, 0.658);
+    margin-bottom: 4px;
+    list-style-type: none;
+    padding: 10px;
+    color: white;
+}
+.special{
+    position: absolute;
+    right: 4px;
+    top: 0px;
+}
+.photo{
+    width: 100%;
+}
+.photo-container{
+    position: relative;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+.product{
+    margin-top: 20px;
+}
+.banner{
+    display:none
+}
+.vip-products{
+    text-align: center;
+}
+.zoom{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.658);
+    right: 0px;
+    width: 100%;
+}
+
+.more {
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 4px;
+    margin-top: 10px;
+    display:inline-block
+    
+}
+
+.main-footer li a{
+    
+    background-color: rgba(0, 0, 0, 0.658);
+    margin: 4px 4px;
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;}
+
+
+
+/*-------------------------------Tablet-------------------------------*/
+
+@media(min-width:460px){
+    .banner img{
+        display: block; 
+        width: 100%;
+    }
+
+    .main-nav li{
+        display: inline-block;
+        margin-bottom: 10px;
+        width:104px ;  
+    }
+
+    .vip-products{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .photo-container{
+        margin: 5px;
+    }
+
+}
+
+/*----------------------------------Computadora------------------------*/
+
+@media(min-width:768px){     
+
+    .container {
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo{
+        margin-top: 15px;
+        border-radius: 90px;
+        margin-bottom: 30px;
+    }
+    .main-nav li a{
+        display:flex;
+        flex-direction: row;
+        padding-left: 0px;
+        justify-content: space-between;
+        width: 180px;
+        height: 50px;
+
+    }
+    .banner{
+        width: 1180px;
+        
+    }
+
+    .vip-products{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .product{
+        max-width: 380px;
+    }
+
+    .main-footer{
+        display: grid;
+    }
+}

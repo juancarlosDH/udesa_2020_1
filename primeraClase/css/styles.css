@@ -1,0 +1,36 @@
+body{
+    background-color: yellow;
+    font-family: 'Sen', sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h1{
+    color: red;
+}
+
+li{
+    color: darkgreen;
+}
+
+#notebook {
+    color: violet;
+}
+
+.li-azules {
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+/**/

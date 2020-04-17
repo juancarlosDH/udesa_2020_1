@@ -1,0 +1,25 @@
+body {
+    background-color: cadetblue;
+    font-family: 'Monserrat';
+    background-image: url(../imagenes/fondo.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1 {
+    font-size: 52px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    background-color: black;
+    color: cornsilk;
+    font-weight: normal;
+}
+
+li {
+    list-style-type: none;
+}

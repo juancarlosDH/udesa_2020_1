@@ -1,0 +1,37 @@
+body {
+    background-image: url(../imagenes/emilia-home.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0,0,0);
+    text-transform: uppercase;
+}
+
+p {
+    padding-left: 20px;
+}
+
+div {
+    padding: 30px;
+    width: 250px;
+    border: 1px  dashed rgb(0,0,0);
+    border-radius: 50%;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 20px;
+    width: 300px;
+}
+
+li {
+    border: black solid 1px;
+}
+
+h1{
+    background-color: rgba(220, 224, 218, 0.637);
+}
