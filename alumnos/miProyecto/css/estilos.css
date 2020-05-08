@@ -1,8 +1,0 @@
-.products{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.product{
-    background-color: khaki;
-    border: black 1px solid;
-}

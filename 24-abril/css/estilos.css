@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.sin-box{
+    width: 300px;
+    padding: 20px;
+    border: 5px green solid;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+.con-box{
+    width: 300px;
+    padding: 20px;
+    border: 5px red solid;
+    border-radius: 10px;
+    background-color: yellow;
+    box-sizing: border-box;
+}
+
+.sin-box{
+    width: 100px;
+}
+
+.con-box:hover{
+    background-color: thistle;
+}
+
+.imagen{
+    width: 200px;
+}
+.oculta{
+    display: none;
+}
+
+img.imagen:hover {
+    opacity: 0.5;
+}
+
+div.imagenes {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+div.imagenes:hover img.oculta{
+    display: inline;
+}
+
+div.imagenes:hover img.a-ocultar{
+    display: none;
+}
