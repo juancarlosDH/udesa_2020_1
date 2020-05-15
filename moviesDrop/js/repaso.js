@@ -20,11 +20,95 @@ ache4.onmouseover = function () {
 
 let peliculas = document.querySelector('.peliculas')
 
-peliculas.innerHTML = '<div class="pelicula"><img src="img/movies/guardianesdelagalaxia.jpg" alt="" class="peli-img"><img src="img/premiere.png" alt="" class="banderin"><h3 class="peli-titulo">Guardianes de la Galaxia</h3></div>';
+peliculas.innerHTML = `<div class="pelicula">
+<div class="cont-imgs">
+  <a href="detalle_pelicula.html">
+    <img src="img/movies/guardianesdelagalaxia.jpg" alt="" class="peli-img">
+  </a>
+  <img src="img/premiere.png" alt="" class="banderin">
+</div>
+<div class="rating">
+  <i class="fas fa-star star-rating"></i>
+  <span class="text-rating">8.5</span>
+</div>
+<h3 class="peli-titulo">Guardianes de la Galaxia</h3>
+<div>
+  <a href="editar_pelicula.html" class="btn btn-success">Editar</a>
+  <a href="eliminar_pelicula.html" class="btn btn-danger">Eliminar</a>
+</div>
+</div>`;
 
-peliculas.innerHTML += '<div class="pelicula"><img src="img/movies/avengers.jpg" alt="" class="peli-img"><img src="img/destacado.png" alt="" class="banderin"><h3 class="peli-titulo">Avengers</h3></div>';
+peliculas.innerHTML += `<div class="pelicula">
+<div class="cont-imgs">
+  <a href="detalle_pelicula.html">
+    <img src="img/movies/avengers.jpg" alt="" class="peli-img">
+  </a>
+  <img src="img/premiere.png" alt="" class="banderin">
+</div>
+<div class="rating">
+  <i class="fas fa-star star-rating"></i>
+  <span class="text-rating">9.0</span>
+</div>
+<h3 class="peli-titulo">Avengers</h3>
+<div>
+  <a href="editar_pelicula.html" class="btn btn-success">Editar</a>
+  <a href="eliminar_pelicula.html" class="btn btn-danger">Eliminar</a>
+</div>
+</div>`;
 
-peliculas.innerHTML += '<div class="pelicula"><img src="img/movies/starwars2.jpg" alt="" class="peli-img"><img src="img/nuevo.png" alt="" class="banderin"><h3 class="peli-titulo">Star Wars</h3></div>';
+peliculas.innerHTML += `<div class="pelicula">
+<div class="cont-imgs">
+  <a href="detalle_pelicula.html">
+    <img src="img/movies/starwars2.jpg" alt="" class="peli-img">
+  </a>
+  <img src="img/premiere.png" alt="" class="banderin">
+</div>
+<div class="rating">
+  <i class="fas fa-star star-rating"></i>
+  <span class="text-rating">8.0</span>
+</div>
+<h3 class="peli-titulo">StarWars 2</h3>
+<div>
+  <a href="editar_pelicula.html" class="btn btn-success">Editar</a>
+  <a href="eliminar_pelicula.html" class="btn btn-danger">Eliminar</a>
+</div>
+</div>`;
+
+peliculas.innerHTML += `<div class="pelicula">
+<div class="cont-imgs">
+  <a href="detalle_pelicula.html">
+    <img src="img/movies/piratasdelcaribe.jpg" alt="" class="peli-img">
+  </a>
+  <img src="img/premiere.png" alt="" class="banderin">
+</div>
+<div class="rating">
+  <i class="fas fa-star star-rating"></i>
+  <span class="text-rating">8.0</span>
+</div>
+<h3 class="peli-titulo">Pirates del Caribe</h3>
+<div>
+  <a href="editar_pelicula.html" class="btn btn-success">Editar</a>
+  <a href="eliminar_pelicula.html" class="btn btn-danger">Eliminar</a>
+</div>
+</div>`;
+
+peliculas.innerHTML += `<div class="pelicula">
+<div class="cont-imgs">
+  <a href="detalle_pelicula.html">
+    <img src="img/movies/inception.jpg" alt="" class="peli-img">
+  </a>
+  <img src="img/premiere.png" alt="" class="banderin">
+</div>
+<div class="rating">
+  <i class="fas fa-star star-rating"></i>
+  <span class="text-rating">8.0</span>
+</div>
+<h3 class="peli-titulo">Inception<h3>
+<div>
+  <a href="editar_pelicula.html" class="btn btn-success">Editar</a>
+  <a href="eliminar_pelicula.html" class="btn btn-danger">Eliminar</a>
+</div>
+</div>`;
 
 //console.log( ache4.innerHTML );
 
