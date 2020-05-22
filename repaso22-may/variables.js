@@ -1,3 +1,8 @@
+
+function promedio(notaA, notaB) {
+    return (notaA + notaB) / 2;
+}
+
 window.onload = function () {
 
     const adn = 'AbbdefGEST';
@@ -27,6 +32,11 @@ window.onload = function () {
             nombreMateria : 'Administración',
             nota1 : 7,
             nota2 : 9
+        },
+        {
+            nombreMateria : 'Matematicas',
+            nota1 : 10,
+            nota2 : 9
         }
     ];
 
@@ -40,11 +50,17 @@ window.onload = function () {
     //ahora voy con las materias
     let htmlMaterias = document.querySelector('#materias');
 
-    htmlMaterias.innerHTML = `<div>
-                                <h4>Nombre de la materia</h4>
-                                <div>Nota 1:</div>
-                                <div>Nota 2:</div>
-                                <div>Promedio:</div>
+    for (let materia of materias) {
+
+        let promedioMateria = promedio(materia.nota1, materia.nota2)
+        htmlMaterias.innerHTML += `<div class="nota">
+                                <h4>` + materia.nombreMateria + `</h4>
+                                <div>Nota 1: ` + materia.nota1 + `</div>
+                                <div>Nota 2: ` + materia.nota2 + `</div>
+                                <div>Promedio: ` + promedioMateria + `</div>
                             </div>`;
+        
+    }
+
 }
 
