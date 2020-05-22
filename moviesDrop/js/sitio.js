@@ -5,9 +5,17 @@ window.onload = function () {
 
     let navegacion = document.querySelector('nav.navigation');
 
-    //capturo al articulo del formulario
-    let divForm = document.querySelector('#formulario');
-    divForm.style.display = 'none';
+    //capturo la caja del formulario para esconderla
+    let divForm = document.querySelector('#caja-modal');
+    divForm.classList.add('ocultar');
+
+    //capturo la caja del formulario para esconderla
+    let buttonCerrar = document.querySelector('#cerrar-modal');
+    buttonCerrar.onclick = function(event){
+        event.preventDefault();
+        divForm.classList.toggle('ocultar');
+        divForm.classList.toggle('caja-formulario-modal');
+    }
 
     let nueva = document.querySelector('#boton-peli');
     
@@ -15,7 +23,8 @@ window.onload = function () {
     nueva.onclick = function (event) {
         event.preventDefault();
         
-        divForm.style.display = 'block';
+        divForm.classList.toggle('ocultar');
+        divForm.classList.toggle('caja-formulario-modal');
     }
 
 
@@ -59,8 +68,8 @@ window.onload = function () {
         </div>
         <h3 class="peli-titulo">` + peli.titulo + `</h3>
         <div>
-            <a href="editar_pelicula.html" class="btn btn-success">Editar</a>
-            <a href="eliminar_pelicula.html" class="btn btn-danger">Eliminar</a>
+            <!--<a href="editar_pelicula.html" class="btn btn-success">Editar</a>
+            <a href="eliminar_pelicula.html" class="btn btn-danger">Eliminar</a>-->
         </div>
         </div>`;
 

@@ -2,3 +2,18 @@
     display: flex;
     justify-content: space-between;
 }
+
+.caja-formulario-modal{
+    position: fixed;
+    top: 77px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008080d6;
+    padding: 40px;
+    z-index: 10;
+}
+
+.ocultar { 
+    display: none;
+}
