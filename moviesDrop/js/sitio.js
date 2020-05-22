@@ -39,7 +39,7 @@ window.onload = function () {
 
     //agrego las pelis
 
-    let peliculas = document.querySelector('.peliculas')
+    /*let peliculas = document.querySelector('.peliculas')
 
     let arrayPeliculas = [
     { titulo : 'Guardianes de la Galaxia', imagen : 'img/movies/guardianesdelagalaxia.jpg' },
@@ -73,7 +73,7 @@ window.onload = function () {
         </div>
         </div>`;
 
-    }
+    }*/
     
 
 
