@@ -1,4 +1,6 @@
-window.addEventListener('load', function () {
+window.onload = function (){
+    const apiKyDeOmdb = 'a7935ed'; //para tener esta api tienes que registrarte en: http://www.omdbapi.com/
+    //llamo a la api de las peliculas
 
     //obtengo el query string
     let queryString = window.location.search
@@ -7,16 +9,14 @@ window.addEventListener('load', function () {
     let objetoQuery = new URLSearchParams(queryString);
 
     //ahora si obtengo lo que mandé por el formulario de busqueda
-    let busqueda = objetoQuery.get('busqueda');
+    let busqueda = objetoQuery.get('filtro');
     
-    //si no le mando nada a buscar, que me traiga las de los vengadores
-    if (!busqueda){
-        busqueda = 'avengers'
-    } 
-
-    //llamo a la funcion, eso es como un fetch, por eso tengo el then
-    buscarPeliculasEnAPI(busqueda)
-        .then(function(data) {
+    fetch('http://www.omdbapi.com/?s='+busqueda+'&apikey='+apiKyDeOmdb+'&page=1')
+        .then(function(res){
+            //transformo en json
+            return res.json();
+        })
+        .then(function(data){
             //empiezo a mostrar las peliculas
             let peliculas = document.querySelector('.peliculas');
 
@@ -43,6 +43,9 @@ window.addEventListener('load', function () {
                 </div>`;
             }
         })
-        .catch(function(error) { console.error(error) });   
+        .catch(function(error){
+            console.error(error);
+            return null;
+        });
 
-    });
+}

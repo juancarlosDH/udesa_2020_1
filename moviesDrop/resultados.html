@@ -12,10 +12,9 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/movies/index.css">
-  <link rel="stylesheet" href="css/movies/detail.css">
 
   <script src="js/sitio.js"></script>
-  <script src="js/detallePelicula.js"></script>
+  <script src="js/menudos.js"></script>
 
 </head>
 <body>
@@ -24,7 +23,7 @@
 
     <header>
 
-      <a href="index.html" id="logo-mobile">
+      <a href="/" id="logo-mobile">
         <img class="logo" src="img/logo2.png" alt="">
       </a>
 
@@ -40,12 +39,14 @@
           <li><a href="meGustan.html">Mis Peliculas</a></li>
           <li><a href="#">Series</a></li>
           <li class="no-hover">
-            <form action="index.html" method="GET" class="forms">
+            <form action="resultados.html" method="GET" class="forms">
               <div class="input-group">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-search"></i></div>
                 </div>
-                <input type="text" class="form-control" placeholder="Buscar" name="busqueda">
+                <input type="text" class="form-control" placeholder="Buscar" name="filtro">
+
+                <button type="submit">Buscar</button>
               </div>
             </form>
           </li>
@@ -58,61 +59,42 @@
     </header>
     
    
-    <section class="principal">
   
-      <article class="black-section movie-detail">
-  
-        <div class="img-movie">
-          <img src="img/logo1.jpg" alt="" class="peli-img">
-        </div>
-  
-  
-        <div class="text-movie">
-          <h2 id="titulo">Movies Drop</h2>
-  
-          <div class="mini-details ">
-            <div class="rating mini-detail-item">
-              <i class="fas fa-star star-rating"></i>
-              <span class="text-rating">9.0</span>
-            </div>
-            
-            <div class="mini-detail-item">
-                <span><i class="fas fa-hourglass-half"></i></span>
-                <span id="duracion">3 h 1 min</span>
-            </div>
-  
-            <div class="mini-detail-item">
-                <span></span><i class="fas fa-calendar-day"></i></span>
-                <span id="fecha-lanzamiento">2000</span>
-            </div>
-  
-          </div>
-          
-  
-          <div id="descripcion">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non illo id distinctio quae rem eaque sit. Cumque, tenetur ea laborum, facere ad optio similique sunt quae blanditiis quas maxime non?
-          </div>
-  
+       
+      <article class="black-section" id="peliculas">
+        <h4 id="bienvenida">Aqui la bienvenida del usuario</h4>
+
+        <div class="titulos">
+          <h2>Peliculas</h2>
           <div>
-            <div class="bd-callout bd-callout-detail">
-              <span>Genero</span>
-              <div id="generos"></div>
-            </div class="bd-callout bd-callout-primary">
-            <div class="bd-callout bd-callout-detail">
-              <span>Actores</span>
-              <div id="actores"></div>
-            </div class="bd-callout bd-callout-primary">
+            <a href="nueva_pelicula.html" id="boton-peli" class="btn btn-primary">Nueva</a>
           </div>
-  
         </div>
-          
-        
+        <div class="peliculas">
+         
             
-  
+        </div>
+
       </article>
-  
-  
+
+
+      <article class="black-section" id="series">
+
+        <h2>Series</h2>
+
+        <div class="series">
+
+        </div>
+
+      </article>
+
+
     </section>
+
+
+  </div>
+
+  <script src="js/resultados.js"></script>
   
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
