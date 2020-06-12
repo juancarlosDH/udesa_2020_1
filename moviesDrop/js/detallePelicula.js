@@ -32,6 +32,7 @@ window.addEventListener('load', function () {
             let descripcion = document.querySelector('#descripcion');
             let generos = document.querySelector('#generos');
             let actores = document.querySelector('#actores');
+            let boton = document.querySelector('#me-gusta');
 
             titulo.innerHTML = data.Title;
             imagen.src = data.Poster;
@@ -41,6 +42,26 @@ window.addEventListener('load', function () {
             descripcion.innerHTML = data.Plot;
             generos.innerHTML = data.Genre;
             actores.innerHTML = data.Actors;
+
+            boton.onclick = function () {
+                //me traigo las pelis de localStorage
+                let pelisEnLocal = window.localStorage.getItem('meGustan');
+                //transformar a js ese string que esta en localStorage
+                let pelisArrayEnLocal = JSON.parse(pelisEnLocal);
+                
+                // tengo que validar que no tenga nada, y si es asi creo un array desde cero
+                if (!pelisArrayEnLocal) {
+                    pelisArrayEnLocal = []
+                }
+
+                //ahora le guardo la nueva peli
+                pelisArrayEnLocal.push(data);
+
+                window.localStorage.setItem('meGustan', JSON.stringify(pelisArrayEnLocal));
+
+                
+                
+            }
 
         })
         .catch(function(error){

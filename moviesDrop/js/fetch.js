@@ -36,9 +36,7 @@ window.addEventListener('load', function () {
                 </div>
                 <h3 class="peli-titulo">${pelicula.Title}</h3>
                 <div>
-                    <!--<a href="editar_pelicula.html" class="btn btn-success">Editar</a>
-                    <a href="eliminar_pelicula.html" class="btn btn-danger">Eliminar</a>-->
-                    <a href="javascript:;" class="btn btn-success boton-me-gusta" onclick="meGustaPelicula('${pelicula.Title}', '${pelicula.imdbID}', '${pelicula.Poster}')">Me gusta</a>
+                    <!--<a href="javascript:;" class="btn btn-success boton-me-gusta">Me gusta</a>-->
                 </div>
                 </div>`;
             }

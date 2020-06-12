@@ -1,7 +1,7 @@
 window.addEventListener('load', function () {
 
     //obtengo las peliculas que me gustan
-    let peliculas = misMeGustan();
+    let peliculas = JSON.parse(window.localStorage.getItem('meGustan'))
 
     //empiezo a mostrar las peliculas
     let containerPeliculas = document.querySelector('.peliculas');
@@ -12,7 +12,7 @@ window.addEventListener('load', function () {
         containerPeliculas.innerHTML += `<div class="pelicula">
         <div class="cont-imgs">
         <a href="detalle_pelicula.html?id=${pelicula.imdbID}">
-            <img src="${pelicula.poster}" alt="" class="peli-img">
+            <img src="${pelicula.Poster}" alt="" class="peli-img">
             </a>
             <img src="img/premiere.png" alt="" class="banderin">
         </div>
@@ -20,7 +20,7 @@ window.addEventListener('load', function () {
             <i class="fas fa-star star-rating"></i>
             <span class="text-rating">8.5</span>
         </div>
-        <h3 class="peli-titulo">${pelicula.titulo}</h3>
+        <h3 class="peli-titulo">${pelicula.Title}</h3>
         <div>
             <a href="javascript:;" class="btn btn-danger" onclick="yaNoMeGustaPelicula('${pelicula.imdbID}')">Ya no me gusta</a>
         </div>
