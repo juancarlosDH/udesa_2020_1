@@ -66,18 +66,13 @@ function misMeGustan(){
 }
 
 function yaNoMeGustaPelicula(idEliminar){
-    //obtengo las pelis
     let peliculasArray = misMeGustan();
-
-    //creo un nuevo array con las pelis a grabar
     let arraySinLaPeli = [];
-    //recorro al array para eliminar la peli
     for(let peli of peliculasArray ){
         if(peli.imdbID != idEliminar) {
             arraySinLaPeli.push(peli);
         }
     }
-
-    //reescribo el json
-    window.localStorage.setItem('meGustan', JSON.stringify(arraySinLaPeli));    
+    window.localStorage.setItem('meGustan', JSON.stringify(arraySinLaPeli));   
+    window.location.href = 'meGustan.html';
 }

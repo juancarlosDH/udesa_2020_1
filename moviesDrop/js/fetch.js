@@ -36,9 +36,22 @@ window.addEventListener('load', function () {
                 </div>
                 <h3 class="peli-titulo">${pelicula.Title}</h3>
                 <div>
-                    <!--<a href="javascript:;" class="btn btn-success boton-me-gusta">Me gusta</a>-->
+                    <a href="#" id='${JSON.stringify(pelicula)}' class="btn btn-success boton-me-gusta">Me gusta</a>
                 </div>
                 </div>`;
+            }
+
+            let botonesMeGustan = document.querySelectorAll('.boton-me-gusta');
+
+            for (let uno of botonesMeGustan) {
+                uno.onclick = function (event) {
+                    event.preventDefault();
+                    let pelisEnLocal = window.localStorage.getItem('meGustan');
+                    let pelisArrayEnLocal = JSON.parse(pelisEnLocal);
+                    pelisArrayEnLocal = (pelisArrayEnLocal ? pelisArrayEnLocal : []);
+                    pelisArrayEnLocal.push(JSON.parse(this.id));
+                    window.localStorage.setItem('meGustan', JSON.stringify(pelisArrayEnLocal));
+                }
             }
         })
         .catch(function(error) { console.error(error) });   
